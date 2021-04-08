@@ -1,0 +1,331 @@
+body{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #dddddd;
+  font-family: courier,arial,helvetica;
+
+}
+.background{
+  position: absolute;
+  background-color: #7b7a7c;
+  height: 70vh;
+  width: 100%;
+  top: 0;
+  z-index: -1;
+
+}
+.background div{
+  position: relative;
+     height: inherit;
+}
+.background div svg{
+  position: absolute;
+  bottom: -1px;
+}
+#container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  width: 90%;
+  border-radius: 30px;
+  -webkit-box-shadow: 4px 3px 11px 3px rgba(0,0,0,0.41);
+box-shadow: 4px 3px 11px 3px rgba(0,0,0,0.41);
+}
+
+.productTile{
+  width: 90%;
+  margin-top: 5px;
+  text-align:left;
+  color:#000;
+line-height: 0;
+}
+.productTile p{
+  color:#333;
+  font-size: 16px;
+  line-height: 1.8;
+  font-family: 'Open Sans', sans-serif;
+}
+.productTile h1{
+  color:#000;
+  font-size: 40px;
+  line-height: 1.8;
+}
+.productTile h2{
+color:#cd995b;
+  font-size: 16px;
+  line-height: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+#headerCus{
+  text-align:center;
+}
+#container .columns .mainDisplay{
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+#container .columns .mainDisplay #backgroundImage{
+  border-radius: 10px;
+  width: inherit;
+  height: inherit;
+  /* Add the blur effect */
+  filter: blur(6px);
+  -webkit-filter: blur(6px) brightness(50%) sepia(50%);
+}
+#mainFeature{
+position: absolute;
+  object-fit:cover;
+  cursor:pointer;
+  border: 2px solid RGBA(255,255,255,.1);
+  max-width: 400px;
+  max-height: 400px;
+  top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+}
+.gallery{
+  object-fit:cover;
+  max-width: 160px;
+  max-height: 80px;
+  cursor: pointer;
+  opacity: 0.5;
+  margin: 5px;
+  border: 1px solid black;
+}
+
+.gallery:hover{
+  opacity: 1.0;
+}
+
+.active{
+  opacity: 1.0;
+}
+
+.columns{
+  margin-top: 50px;
+  width:500px;
+  padding: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.general{
+  width: 40%;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.general .prices span::before{
+  content: "$";
+}
+.general .prices{
+display: flex;
+justify-content: left;
+}
+.general .prices .originalPrice{
+  color:#aaa;
+  text-decoration: line-through;
+  font-size: 15px;
+  margin-right: 5px;
+}
+.general .prices .currentPrice{
+  font-size: 18px;
+  font-weight: 550;
+  margin-left: 5px;
+}
+.general .shop{
+  line-height: 0;
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-start;
+ align-items: left;
+ transition: all 300ms ease 0s;
+ padding:5px 5px;
+ background-color: rgba(0,0,0,0.1);
+}
+.general .shop:hover{
+background-color: rgba(113, 222, 236, 0.5);
+}
+.general .shop:hover span{
+  color:#fff;
+  font-size: 20px;
+}
+.general .shop img{
+  height: 100px;
+  width: 100px;
+}
+.general .shop .shopDetail{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.general .shop h3{
+  color: #000;
+  letter-spacing: 2;
+font-size: 23px;
+}
+.general .shop span{
+  margin-top: 10px;
+  font-size: 16px;
+  transition: all 200ms ease 0s;
+  color:#cd995b;
+}
+.general .input{
+  margin-top: 10px;
+  width: 70%;
+  justify-content: center;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+}
+.general .inputBut{
+margin-top: 10px;
+}
+.proButt{
+  border:none;
+  background-color: black;
+  color:white;
+  text-align: center;
+  transition-duration: 0.1s;
+  cursor: pointer;
+  display: inline-block;
+  padding: 7px 16px;
+  font-size: 16px;
+}
+
+.proButt:hover{
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+.container .ProductBox
+{
+  position:relative;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 20px 10px;
+  width:200px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+    box-shadow: 1px 1px 30px rgba(0,0,0,0.05);
+    cursor: pointer;
+}
+.container .ProductBox img{
+  width: 175px;
+  height: 175px;
+  margin-bottom: 5px;
+}
+.container .ProductBox .ProTitle{
+  margin: 0;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Rubik";
+}
+
+.container .ProductBox .Author{
+  margin: 0;
+  font-size: 16px;
+  margin-top: 30px;
+  color:#cd995b;
+}
+.container .ProductBox .prices{
+  margin-top: 5px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.container .ProductBox .prices .original::before{
+  content:'$';
+}
+.container .ProductBox .prices .original{
+  margin:0 10px;
+  font-size: 16px;
+  text-decoration: line-through;
+  color:#777;
+}
+.container .ProductBox .prices .current::before{
+    content:'$';
+}
+.container .ProductBox .prices .current{
+  margin:0 10px;
+  font-size: 20px;
+  color:#000;
+}
+.container .ProductBox .HoverEffect{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(99, 123, 255, 0.5);
+  transition: all 300ms ease-in-out 0s;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+display: flex;
+opacity: 0;
+}
+.container .ProductBox .HoverEffect a{
+  text-decoration: none;
+}
+.container .ProductBox .HoverEffect .HoverButton{
+color: #000;
+font-weight: 300;
+border-radius: 50px;
+background-color: #fff;
+padding:20px 10px;
+  transition: all 300ms ease-in-out 0s;
+  opacity: 0;
+  box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+}
+.container .ProductBox:hover >.HoverEffect{
+opacity: 1;
+}
+.container .ProductBox:hover >.HoverEffect .HoverButton{
+  opacity: 1;
+}
+.container .ProductBox .HoverEffect .HoverButton:hover{
+  background-color: #109bef;
+  color:#fff;
+  padding:20px 30px;
+}
+.containerIntro .intro{
+  text-align: center;
+  position: relative;
+    text-transform: uppercase;
+    color:#5b5b5b;
+}
+.containerIntro .introContent{
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  color:#777;
+  max-width: 40%;
+}
+.container
+{position: relative;
+margin-left: -40px;
+width: 100%;
+display: inline-flex;
+justify-content: center;
+align-items: center;
+padding: 20px 0;
+flex-wrap: wrap;
+}
+.container::after{
+  position: absolute;
+  content:'';
+  width: 50%;
+height: 1px;
+  bottom: -10px;
+    background-image: linear-gradient(to right,#fff,#000,#fff);
+}
+#inp{
+  padding: 5px 16px;
+}
